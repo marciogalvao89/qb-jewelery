@@ -34,7 +34,7 @@ local function exploitBan(id, reason)
             2147483647,
             'qb-jewelery'
         })
-    TriggerEvent('qb-log:server:CreateLog', 'jewelery', 'Player Banned', 'red',
+    TriggerEvent('qb-log:server:CreateLog', src, 'jewelery', 'Player Banned', 'red',
         string.format('%s was banned by %s for %s', GetPlayerName(id), 'qb-jewelery', reason), true)
     DropPlayer(id, 'You were permanently banned by the server for: Exploiting')
 end
